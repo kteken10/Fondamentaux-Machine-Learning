@@ -1,0 +1,10 @@
+# Render.com — déploiement Docker en un clic (Blueprint)
+# Sur render.com : New > Blueprint > connecter le repo. Render lit ce fichier.
+services:
+  - type: web
+    name: fraudai
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /api/meta
+    autoDeploy: true

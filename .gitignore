@@ -1,0 +1,18 @@
+# Données volumineuses (à NE PAS committer — 150 Mo)
+creditcard.csv
+
+# Node / build
+**/node_modules
+**/dist
+**/.vite
+**/tsconfig.tsbuildinfo
+
+# Python
+**/__pycache__
+*.pyc
+.venv/
+
+# Sauvegardes / temporaires
+.backup_*
+_*.txt
+_*.png

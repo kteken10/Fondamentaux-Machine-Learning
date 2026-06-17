@@ -1,0 +1,11 @@
+# Gros fichiers / artefacts inutiles dans l'image
+creditcard.csv
+**/node_modules
+**/dist
+**/__pycache__
+**/.vite
+.backup_*
+*.ipynb
+FraudAI_Business_Case_Gouvernance.docx
+AUDIT_FraudAI.md
+.git
