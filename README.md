@@ -26,8 +26,7 @@ risque ; la décision finale reste humaine** (RGPD Art. 22 / AI Act Art. 14).
 | `fraudai_model.pkl` | Modèle champion XGBoost + scaler + seuils |
 | `webapp/` | Application web : **FastAPI** (backend) + **React/Vite/Tailwind** (frontend) |
 | `requirements.txt` | Dépendances Python du notebook |
-| `Dockerfile` | Image unique (front buildé + API) |
-| `AUDIT_FraudAI.md` | Rapport d'audit du projet |
+| `Dockerfile` · `render.yaml` | Image unique (front buildé + API) · déploiement Render |
 | `DEPLOIEMENT.md` · `SOUTENANCE.md` | Guide de déploiement · trame de soutenance |
 
 ## Résultats (test jamais touché)
