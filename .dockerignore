@@ -6,6 +6,6 @@ creditcard.csv
 **/.vite
 .backup_*
 *.ipynb
-FraudAI_Business_Case_Gouvernance.docx
-AUDIT_FraudAI.md
+*.docx
+*.md
 .git
