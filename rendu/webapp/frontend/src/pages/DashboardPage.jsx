@@ -48,7 +48,7 @@ export default function DashboardPage() {
     <div className="space-y-6">
       <PageHeader
         title="Tableau de bord"
-        description="Détection de fraude aux remboursements de santé — vue d'ensemble du modèle en production."
+        description="Détection de fraude aux remboursements de santé - vue d'ensemble du modèle en production."
       />
 
       {/* Hero + santé */}

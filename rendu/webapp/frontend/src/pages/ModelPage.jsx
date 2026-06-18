@@ -12,7 +12,7 @@ const KPI = [
   { key: "AUC-PR", label: "AUC-PR", fmt: (m) => dec(m["AUC-PR"], 3), target: "> 0,80" },
   { key: "AUC-ROC", label: "AUC-ROC", fmt: (m) => dec(m["AUC-ROC"], 3), target: "> 0,95" },
   { key: "Recall", label: "Recall (test)", fmt: (m) => pct(m.Recall), target: "≥ 80 %" },
-  { key: "Precision", label: "Précision (test)", fmt: (m) => pct(m.Precision), target: "—" },
+  { key: "Precision", label: "Précision (test)", fmt: (m) => pct(m.Precision), target: "-" },
 ];
 
 const GOV = [
@@ -34,7 +34,7 @@ export default function ModelPage() {
   return (
     <div className="space-y-6">
       <PageHeader
-        title="Modèle — performance & gouvernance"
+        title="Modèle - performance & gouvernance"
         description="Métriques mesurées sur le jeu de test jamais touché (split 60/20/20) et cadre de conformité."
       />
 
@@ -147,7 +147,7 @@ export default function ModelPage() {
         <TabsContent value="gov" className="space-y-6">
           <Card>
             <CardHeader>
-              <CardTitle>Cadre réglementaire (système à haut risque — AI Act Annexe III)</CardTitle>
+              <CardTitle>Cadre réglementaire (système à haut risque - AI Act Annexe III)</CardTitle>
             </CardHeader>
             <CardContent className="space-y-3">
               {GOV.map((g) => (
@@ -168,7 +168,7 @@ export default function ModelPage() {
               </CardHeader>
               <CardContent className="space-y-2 text-sm text-slate-600">
                 <p>• Monitoring hebdomadaire : distribution des scores, taux FP/FN.</p>
-                <p>• Drift : test de Kolmogorov-Smirnov sur V1–V28 et le montant.</p>
+                <p>• Drift : test de Kolmogorov-Smirnov sur V1-V28 et le montant.</p>
                 <p>• Alerte : dégradation du recall &gt; 5 % sur 30 jours glissants.</p>
                 <p>• Retraining : sur drift détecté ou tous les 3 mois.</p>
               </CardContent>

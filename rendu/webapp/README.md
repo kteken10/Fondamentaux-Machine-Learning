@@ -1,14 +1,14 @@
-# FraudAI — Plateforme web (React + FastAPI)
+# FraudAI - Plateforme web (React + FastAPI)
 
 Centre de détection de fraude aux remboursements CPAM, pour les agents contrôleurs.
 Design system inspiré de **SDEN Core** : React 18 + Vite + Tailwind 3 + Radix UI,
 palette **noir / blanc / orange**, composants faits main (`cn()`, primitives `ui/`).
-Le **backend FastAPI charge le même `fraudai_model.pkl`** que le notebook → les scores
+Le **backend FastAPI charge le même `fraudai_model.pkl`** que le notebook -> les scores
 et métriques affichés sont strictement identiques au notebook.
 
 ```
 webapp/
-  backend/    API FastAPI (Python) — scoring + SHAP + overview
+  backend/    API FastAPI (Python) - scoring + SHAP + overview
   frontend/   Vite + React + Tailwind + Radix (JS/JSX)
     src/
       lib/cn.js              cn() = twMerge(clsx())

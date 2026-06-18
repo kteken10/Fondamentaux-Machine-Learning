@@ -27,7 +27,7 @@ export default function AnalysePage() {
     mutationFn: () => fraudApi.score({ amount, hour, v }),
     onSuccess: (data) => {
       setRes(data);
-      if (data.level === "RISQUE ELEVE") toast.error("Dossier à risque élevé — contrôle prioritaire.");
+      if (data.level === "RISQUE ELEVE") toast.error("Dossier à risque élevé - contrôle prioritaire.");
       else toast.success("Analyse terminée.");
     },
     onError: (err) => toast.error(formatError(err)),

@@ -16,7 +16,7 @@ export default function BatchPage() {
     mutationFn: (file) => fraudApi.batch(file),
     onSuccess: (data) => {
       setResult(data);
-      toast.success(`${data.n} demandes analysées — ${data.n_high} à risque élevé.`);
+      toast.success(`${data.n} demandes analysées - ${data.n_high} à risque élevé.`);
     },
     onError: (err) => toast.error(formatError(err)),
   });
@@ -74,7 +74,7 @@ export default function BatchPage() {
                 <tbody>
                   {result.rows.map((r, i) => (
                     <tr key={i} className="border-t border-slate-100 hover:bg-slate-50">
-                      <td className="px-5 py-2.5 tabular-nums text-slate-700">{r.amount ?? "—"}</td>
+                      <td className="px-5 py-2.5 tabular-nums text-slate-700">{r.amount ?? "-"}</td>
                       <td className="px-5 py-2.5 text-right tabular-nums text-slate-600">{r.proba}</td>
                       <td className="px-5 py-2.5 text-right font-semibold tabular-nums text-slate-900">{r.score}</td>
                       <td className="px-5 py-2.5">

@@ -1,5 +1,5 @@
 """
-FraudAI — Backend API (FastAPI)
+FraudAI - Backend API (FastAPI)
 Charge le pipeline du notebook (fraudai_model.pkl) et expose le scoring.
 Le score renvoyé est STRICTEMENT identique a celui du notebook (meme modele,
 meme scaler, memes seuils t_low/t_high).
@@ -36,7 +36,7 @@ THR_F1 = float(PIPE.get("threshold_f1", THR))
 METRICS: Dict = PIPE.get("metrics", {})
 CHAMPION = PIPE.get("champion_name", "modele")
 
-# SHAP (explicabilite) — initialise une fois au demarrage si disponible
+# SHAP (explicabilite) - initialise une fois au demarrage si disponible
 EXPLAINER = None
 try:
     import shap
