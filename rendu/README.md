@@ -13,6 +13,7 @@ Maladie. **L'IA calcule un score de risque ; la décision finale reste humaine**
 |---|---|
 | `01_FraudAI_Notebook_Pipeline_ML.ipynb` | Pipeline ML complet (EDA → modélisation → SHAP), exécuté et déterministe |
 | `02_FraudAI_Rapport_BusinessCase_Gouvernance.pdf` | Rapport : Business Case + gouvernance (10 sections, figures) |
+| `03_FraudAI_Presentation.pptx` | Présentation de soutenance (11 diapos, ~10 min) |
 | `fraudai_model.pkl` | Modèle champion XGBoost + scaler + seuils |
 | `requirements.txt` | Dépendances Python du notebook |
 | `webapp/` | Application web : **FastAPI** (backend) + **React / Vite / Tailwind** (frontend) |
