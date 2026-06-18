@@ -1,17 +1,17 @@
-# FraudAI — Détection de fraude aux remboursements de santé (CPAM)
+# FraudAI - Détection de fraude aux remboursements de santé (CPAM)
 
-**Projet fil rouge — MSc Machine Learning, EPITA 2026.**
+**Projet fil rouge - MSc Machine Learning, EPITA 2026.**
 Système d'aide à la priorisation des contrôles anti-fraude pour les agents de l'Assurance
 Maladie. **L'IA calcule un score de risque ; la décision finale reste humaine**
 (RGPD Art. 22 / AI Act Art. 14).
 
-> 🔗 **Application en ligne (démo) : https://fraudai-63qw.onrender.com**
+> **Application en ligne (démo) : https://fraudai-63qw.onrender.com**
 > *(hébergement gratuit : le premier chargement peut prendre ~30 s, le temps du réveil du service.)*
 
 ## Contenu du rendu
 | Fichier | Description |
 |---|---|
-| `01_FraudAI_Notebook_Pipeline_ML.ipynb` | Pipeline ML complet (EDA → modélisation → SHAP), exécuté et déterministe |
+| `01_FraudAI_Notebook_Pipeline_ML.ipynb` | Pipeline ML complet (EDA -> modélisation -> SHAP), exécuté et déterministe |
 | `02_FraudAI_Rapport_BusinessCase_Gouvernance.pdf` | Rapport : Business Case + gouvernance (10 sections, figures) |
 | `03_FraudAI_Presentation.pptx` | Présentation de soutenance (11 diapos, ~10 min) |
 | `fraudai_model.pkl` | Modèle champion XGBoost + scaler + seuils |
@@ -28,15 +28,15 @@ calibrés sur la validation, métriques finales sur le test.
 > Placez-le dans ce dossier `rendu/` à côté du notebook avant de l'exécuter.
 ```bash
 pip install -r requirements.txt
-jupyter notebook 01_FraudAI_Notebook_Pipeline_ML.ipynb   # puis Run All
+jupyter notebook 01_FraudAI_Notebook_Pipeline_ML.ipynb # puis Run All
 ```
 
 ## Lancer l'application
 ```bash
-# Terminal 1 — backend (port 8000)
+# Terminal 1 - backend (port 8000)
 cd webapp/backend && pip install -r requirements.txt && uvicorn main:app --port 8000
-# Terminal 2 — frontend (port 5173)
+# Terminal 2 - frontend (port 5173)
 cd webapp/frontend && npm install && npm run dev
 ```
-Le backend charge le **même `fraudai_model.pkl`** que le notebook → score identique.
+Le backend charge le **même `fraudai_model.pkl`** que le notebook -> score identique.
 Détails de déploiement (Docker / Render) : voir `../GUIDE_Deploiement.md`.
