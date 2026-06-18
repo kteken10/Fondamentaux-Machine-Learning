@@ -5,12 +5,14 @@ Système d'aide à la priorisation des contrôles anti-fraude pour les agents de
 Maladie. **L'IA calcule un score de risque ; la décision finale reste humaine**
 (RGPD Art. 22 / AI Act Art. 14).
 
+> 🔗 **Application en ligne (démo) : https://fraudai-63qw.onrender.com**
+> *(hébergement gratuit : le premier chargement peut prendre ~30 s, le temps du réveil du service.)*
+
 ## Contenu du rendu
 | Fichier | Description |
 |---|---|
 | `01_FraudAI_Notebook_Pipeline_ML.ipynb` | Pipeline ML complet (EDA → modélisation → SHAP), exécuté et déterministe |
-| `02_FraudAI_Rapport_BusinessCase_Gouvernance.docx` | Rapport : Business Case + gouvernance (10 sections, figures) |
-| `03_FraudAI_Soutenance.md` | Trame de soutenance (~10 min) |
+| `02_FraudAI_Rapport_BusinessCase_Gouvernance.pdf` | Rapport : Business Case + gouvernance (10 sections, figures) |
 | `fraudai_model.pkl` | Modèle champion XGBoost + scaler + seuils |
 | `requirements.txt` | Dépendances Python du notebook |
 | `webapp/` | Application web : **FastAPI** (backend) + **React / Vite / Tailwind** (frontend) |

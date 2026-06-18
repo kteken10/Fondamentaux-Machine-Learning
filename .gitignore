@@ -12,7 +12,9 @@ creditcard.csv
 *.pyc
 .venv/
 
-# Sauvegardes / temporaires
+# Sauvegardes / temporaires / archives
 .backup_*
 _*.txt
 _*.png
+_*.py
+*.zip
