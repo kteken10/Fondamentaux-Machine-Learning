@@ -10,14 +10,14 @@ Write-Host "Demarrage de FraudAI..." -ForegroundColor Cyan
 # 1) Backend FastAPI (port 8000)
 Start-Process powershell -ArgumentList @(
   "-NoExit", "-Command",
-  "cd '$root\webapp\backend'; python -m uvicorn main:app --reload --port 8000"
+  "cd '$root\rendu\webapp\backend'; python -m uvicorn main:app --reload --port 8000"
 )
 
 
 # 2) Frontend Vite (port 5173)
 Start-Process powershell -ArgumentList @(
   "-NoExit", "-Command",
-  "cd '$root\webapp\frontend'; if (-not (Test-Path node_modules)) { npm install }; npm run dev"
+  "cd '$root\rendu\webapp\frontend'; if (-not (Test-Path node_modules)) { npm install }; npm run dev"
 )
 
 

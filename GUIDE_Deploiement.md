@@ -11,7 +11,7 @@ Le plus fiable le jour J : aucune dépendance internet.
 
 ### A.1 — Un seul serveur (mode production)
 ```bash
-cd webapp/frontend && npm install && npm run build      # génère dist/
+cd rendu/webapp/frontend && npm install && npm run build      # génère dist/
 cd ../backend && pip install -r requirements.txt
 uvicorn main:app --port 8000
 ```
